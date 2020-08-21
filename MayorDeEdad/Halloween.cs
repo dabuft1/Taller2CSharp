@@ -61,5 +61,12 @@ namespace MayorDeEdad
             label3.Visible = false;
             lblValorTotal.Visible = false;
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Temporadadedescuentos temporadadedescuentos = new Temporadadedescuentos();
+            temporadadedescuentos.Show();
+            this.Dispose();
+        }
     }
 }

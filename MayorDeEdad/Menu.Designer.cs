@@ -33,12 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pB1 = new System.Windows.Forms.PictureBox();
+            this.pB2 = new System.Windows.Forms.PictureBox();
+            this.pB3 = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pB1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pB2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pB3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -91,54 +92,70 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Temporada de descuentos";
             // 
-            // pictureBox3
+            // pB1
             // 
-            this.pictureBox3.Image = global::MayorDeEdad.Properties.Resources._45f0bde0a0adaa70260bcc083b29473e_letras_n_mero_uno_by_vexels;
-            this.pictureBox3.Location = new System.Drawing.Point(39, 153);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(95, 68);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
+            this.pB1.Image = global::MayorDeEdad.Properties.Resources._45f0bde0a0adaa70260bcc083b29473e_letras_n_mero_uno_by_vexels;
+            this.pB1.Location = new System.Drawing.Point(39, 153);
+            this.pB1.Name = "pB1";
+            this.pB1.Size = new System.Drawing.Size(95, 68);
+            this.pB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pB1.TabIndex = 4;
+            this.pB1.TabStop = false;
+            this.pB1.Click += new System.EventHandler(this.pB1_Click);
             // 
-            // pictureBox2
+            // pB2
             // 
-            this.pictureBox2.Image = global::MayorDeEdad.Properties.Resources._141a50dde589d51134d2c435621aeff3_letras_n_mero_dos_by_vexels;
-            this.pictureBox2.Location = new System.Drawing.Point(39, 227);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(95, 68);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.pB2.Image = global::MayorDeEdad.Properties.Resources._141a50dde589d51134d2c435621aeff3_letras_n_mero_dos_by_vexels;
+            this.pB2.Location = new System.Drawing.Point(39, 227);
+            this.pB2.Name = "pB2";
+            this.pB2.Size = new System.Drawing.Size(95, 68);
+            this.pB2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pB2.TabIndex = 3;
+            this.pB2.TabStop = false;
+            this.pB2.Click += new System.EventHandler(this.pB2_Click);
             // 
-            // pictureBox1
+            // pB3
             // 
-            this.pictureBox1.Image = global::MayorDeEdad.Properties.Resources._9bf348b8187181cfd46aa55d594794f9_letras_n_mero_tres_by_vexels;
-            this.pictureBox1.Location = new System.Drawing.Point(39, 301);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pB3.Image = global::MayorDeEdad.Properties.Resources._9bf348b8187181cfd46aa55d594794f9_letras_n_mero_tres_by_vexels;
+            this.pB3.Location = new System.Drawing.Point(39, 301);
+            this.pB3.Name = "pB3";
+            this.pB3.Size = new System.Drawing.Size(95, 68);
+            this.pB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pB3.TabIndex = 2;
+            this.pB3.TabStop = false;
+            this.pB3.Click += new System.EventHandler(this.pB3_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(576, 351);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(155, 87);
+            this.btnSalir.TabIndex = 23;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pB1);
+            this.Controls.Add(this.pB2);
+            this.Controls.Add(this.pB3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Menu";
             this.Text = "Menu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pB1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pB2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pB3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,11 +165,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pB3;
+        private System.Windows.Forms.PictureBox pB2;
+        private System.Windows.Forms.PictureBox pB1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

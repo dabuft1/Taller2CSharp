@@ -89,5 +89,12 @@ namespace MayorDeEdad
             lblNotaFinal.Visible = false;
             lblResultado.Visible = false;
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Dispose();
+        }
     }
 }

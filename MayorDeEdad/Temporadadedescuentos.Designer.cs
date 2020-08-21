@@ -30,12 +30,13 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pBHalloween = new System.Windows.Forms.PictureBox();
+            this.pBDiciembre = new System.Windows.Forms.PictureBox();
+            this.pBEscolar = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHalloween)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBDiciembre)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBEscolar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,51 +59,67 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Escoje una imagen segun la temporada";
             // 
-            // pictureBox3
+            // pBHalloween
             // 
-            this.pictureBox3.Image = global::MayorDeEdad.Properties.Resources.Halloween;
-            this.pictureBox3.Location = new System.Drawing.Point(296, 167);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(211, 173);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
+            this.pBHalloween.Image = global::MayorDeEdad.Properties.Resources.Halloween;
+            this.pBHalloween.Location = new System.Drawing.Point(296, 167);
+            this.pBHalloween.Name = "pBHalloween";
+            this.pBHalloween.Size = new System.Drawing.Size(211, 173);
+            this.pBHalloween.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBHalloween.TabIndex = 6;
+            this.pBHalloween.TabStop = false;
+            this.pBHalloween.Click += new System.EventHandler(this.pBHalloween_Click);
             // 
-            // pictureBox2
+            // pBDiciembre
             // 
-            this.pictureBox2.Image = global::MayorDeEdad.Properties.Resources.diciembre;
-            this.pictureBox2.Location = new System.Drawing.Point(545, 167);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(223, 173);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.pBDiciembre.Image = global::MayorDeEdad.Properties.Resources.diciembre;
+            this.pBDiciembre.Location = new System.Drawing.Point(545, 167);
+            this.pBDiciembre.Name = "pBDiciembre";
+            this.pBDiciembre.Size = new System.Drawing.Size(223, 173);
+            this.pBDiciembre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBDiciembre.TabIndex = 5;
+            this.pBDiciembre.TabStop = false;
+            this.pBDiciembre.Click += new System.EventHandler(this.pBDiciembre_Click);
             // 
-            // pictureBox1
+            // pBEscolar
             // 
-            this.pictureBox1.Image = global::MayorDeEdad.Properties.Resources.Escolar;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 167);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(230, 173);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.pBEscolar.Image = global::MayorDeEdad.Properties.Resources.Escolar;
+            this.pBEscolar.Location = new System.Drawing.Point(30, 167);
+            this.pBEscolar.Name = "pBEscolar";
+            this.pBEscolar.Size = new System.Drawing.Size(230, 173);
+            this.pBEscolar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBEscolar.TabIndex = 4;
+            this.pBEscolar.TabStop = false;
+            this.pBEscolar.Click += new System.EventHandler(this.pBEscolar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(341, 364);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(133, 74);
+            this.btnSalir.TabIndex = 21;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // Temporadadedescuentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.pBHalloween);
+            this.Controls.Add(this.pBDiciembre);
+            this.Controls.Add(this.pBEscolar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Temporadadedescuentos";
             this.Text = "Temporadadedescuentos";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBHalloween)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBDiciembre)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBEscolar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,8 +129,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pBEscolar;
+        private System.Windows.Forms.PictureBox pBDiciembre;
+        private System.Windows.Forms.PictureBox pBHalloween;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
